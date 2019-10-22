@@ -320,7 +320,9 @@ nav .logo {
 }   
 
 input[type="radio"] {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 54px;
 }
 
 .controls {
