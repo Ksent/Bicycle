@@ -280,9 +280,27 @@ nav .logo {
   overflow: hidden;	
 }
 
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
 .slides {
   width: 300%;
   transition: transform 0.8s ease;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.slides:hover {
+  animation: none;
 }
 
 .twitt {
@@ -368,6 +386,12 @@ input[type="radio"] {
 
 #btn3:checked ~ .inner .slides {
   transform: translate(-3200px);
+}
+
+#btn1:hover ~ .inner .slides,
+#btn2:hover ~ .inner .slides,
+#btn3:hover ~ .inner .slides { 
+  animation: none;
 }
 
 #shop {
