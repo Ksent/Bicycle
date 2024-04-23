@@ -1,8 +1,8 @@
 'use strict';
 
-let controls = document.querySelector('.controls');
-let slides = document.querySelector('.slides');
-let slidesItem = document.querySelectorAll('.twitt');
+let controls = document.querySelector('.slider-controls');
+let slides = document.querySelector('.slider-list');
+let slidesItem = document.querySelectorAll('.slider-item');
 let position = 0;
 let width;
 
@@ -19,7 +19,7 @@ function moveSlide(slideIndex) {
 }
 
 function changeChecked() {
-  let controlsInput = controls.querySelectorAll('input');
+  let controlsInput = controls.querySelectorAll('.slider-input');
 
   for (let i = 0; i < controlsInput.length; i++) {
     
