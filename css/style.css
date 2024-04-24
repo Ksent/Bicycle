@@ -41,7 +41,6 @@ body {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
-  background-color: #f7f7f7;
 }
 
 .page-header {
@@ -416,7 +415,7 @@ body {
 
 .shop-wrapper {
   width: 533px;
-  height: 280px;
+  height: 267px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -427,6 +426,10 @@ body {
 .shop-wrapper:hover {
   background: rgba(100, 194, 158, 0.8);
   transition: 0.3s ease;
+}
+
+.shop-logo {
+  margin-top: 11px;
 }
 
 .shop-title {
